@@ -32,7 +32,7 @@ def get_pic(url):
 	soup = BeautifulSoup(html, 'lxml')
 	# print(soup)
 	for u in soup.find_all('img', {"class": "BDE_Image"}):
-		print(u)
+		# print(u)
 		if u is not None:
 			links.append(u['src'])
 	links.sort()
